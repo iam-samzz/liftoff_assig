@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.login-section button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border: 1px solid #008cff;
+    border-radius: 5px;
+    background: white;
+    color: #008cff;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1920x650') no-repeat center/cover;
+    padding: 4rem 5%;
+    min-height: 70vh;
+}
+
+/* Search Container */
+.search-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-tabs {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.tab.active {
+    background: #008cff;
+    color: white;
+}
+
+/* Search Form */
+.search-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding-left: 2.5rem;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.search-btn {
+    background: #008cff;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Special Fares */
+.special-fares {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.fare-item {
+    text-align: center;
+    color: #333;
+}
+
+.fare-item i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-form {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .special-fares {
+        flex-wrap: wrap;
+    }
+}

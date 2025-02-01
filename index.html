@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeMyTrip Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <img src="https://via.placeholder.com/150x50" alt="Logo" class="logo">
+        <div class="nav-items">
+            <a href="#">Flights</a>
+            <a href="#">Hotels</a>
+            <a href="#">Homestays</a>
+            <a href="#">Holidays</a>
+        </div>
+        <div class="login-section">
+            <button>Login</button>
+            <button>Sign Up</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="search-container">
+            <div class="search-tabs">
+                <div class="tab active">Flights</div>
+                <div class="tab">Hotels</div>
+                <div class="tab">Homestays</div>
+            </div>
+
+            <form class="search-form">
+                <div class="input-group">
+                    <i class="fas fa-plane-departure"></i>
+                    <input type="text" placeholder="From">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-plane-arrival"></i>
+                    <input type="text" placeholder="To">
+                </div>
+                <div class="input-group">
+                    <i class="far fa-calendar"></i>
+                    <input type="date" placeholder="Departure">
+                </div>
+                <div class="input-group">
+                    <i class="far fa-calendar"></i>
+                    <input type="date" placeholder="Return">
+                </div>
+                <button class="search-btn">Search</button>
+            </form>
+
+            <div class="special-fares">
+                <div class="fare-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <div>Student Fares</div>
+                </div>
+                <div class="fare-item">
+                    <i class="fas fa-suitcase"></i>
+                    <div>Senior Citizen</div>
+                </div>
+                <div class="fare-item">
+                    <i class="fas fa-briefcase-medical"></i>
+                    <div>COVID-19</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
